@@ -1,0 +1,65 @@
+.library {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 18rem;
+  height: 100%;
+  background: white;
+  box-shadow: 2px 2px 50px rgb(194, 194, 194);
+  overflow: scroll;
+  transform: translateX(100%);
+  transition: all 0.5s ease;
+  opacity: 0;
+  h2 {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding: 2rem 2.5rem 1rem 0rem;
+  }
+}
+.library-sur {
+  display: flex;
+  justify-content: end;
+  padding: 1rem 3rem 1rem 1rem;
+transition: background 0.5s ease;
+  cursor: pointer;
+  h3 {
+    padding: 1rem 0rem;
+  }
+  &:hover {
+    background: rgb(223, 234, 255);
+  }
+}
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(155, 155, 155, 0.5) transparent;
+}
+*::-webkit-scrollbar {
+  width: 5px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background: rgba(155, 155, 155, 0.5) transparent;
+  border-radius: 20px;
+  border: transparent;
+}
+.selected {
+  background: rgb(255, 235, 255);
+}
+.active-library {
+  transform: translateX(0%);
+  opacity: 1;
+}
+@media screen and(max-width:768px ) {
+.library{
+  width: 100%;
+  padding-top: 4rem;
+  h2{
+    display: none;
+  }
+}
+.library-sur{
+}
+}

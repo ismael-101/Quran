@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3 {
+  color: rgb(53, 53, 53);
+}
+body {
+  font-family: "Amiri Quran", serif;
+  font-family: "Noto Naskh Arabic", serif;
+}
+h3,
+h4 {
+  font-weight: 400;
+  color: rgb(101, 101, 101);
+}
+.App {
+  transition: all 0.5s ease;
+}
+.library-active {
+  margin-right: 30%;
+}
+
+@import "./sur";
+@import "./player";
+@import "./Library";
+@import "./nav";
